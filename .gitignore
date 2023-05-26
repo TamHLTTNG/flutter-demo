@@ -116,3 +116,4 @@ coverage/
 **/lib/**/*.freezed.dart
 
 /.fvm
+/pubspec.lock

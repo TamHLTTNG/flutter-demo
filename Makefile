@@ -149,3 +149,9 @@ flavor: ## lefthookインストール
 delete-generate-file: ## コード生成を削除
 	@echo "コード生成を削除"
 	@find . -maxdepth 20 -type f \( -name "*.freezed.dart" -o  -name "*.g.dart" \) -delete
+
+.PHONY: setup_action
+setup_action: ## プロジェクトのセットアップ
+	@echo "${GREEN}╠ プロジェクトのセットアップ${RESET}"
+	@flutter pub get
+	@flutter packages pub run build_runner build --delete-conflicting-outputs
