@@ -112,8 +112,8 @@ coverage/
 .idea/libraries/**
 /lib/generated/assets.dart
 
-**/lib/**/*.g.dart
-**/lib/**/*.freezed.dart
+# **/lib/**/*.g.dart 
+# **/lib/**/*.freezed.dart
 
 /.fvm
 /pubspec.lock
